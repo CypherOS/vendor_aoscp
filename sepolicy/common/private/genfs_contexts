@@ -1,2 +1,4 @@
 # treat fuseblk as sdcard_external
+genfscon exfat / u:object_r:exfat:s0
 genfscon fuseblk / u:object_r:fuseblk:s0
+genfscon ntfs / u:object_r:ntfs:s0

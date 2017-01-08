@@ -152,7 +152,6 @@ PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/aoscp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
 # Copy over added mimetype supported in libcore.net.MimeUtils

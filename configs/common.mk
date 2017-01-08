@@ -199,5 +199,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aoscp/configs/partner_gms.mk
+-include vendor/aoscp/configs/common_packages.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)

@@ -85,7 +85,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.gservices_delay=-1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-	ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+	ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+	ro.setupwizard.rotation_locked=true \
+    ro.opa.eligible_device=true
 
 #SELinux
 PRODUCT_PROPERTY_OVERRIDES += \

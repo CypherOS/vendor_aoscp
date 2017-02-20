@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     Luna \
     WallpaperPicker \
-    SoundRecorder
+    Recorder
 
 # AOSCP Updates
 PRODUCT_PACKAGES +=  \

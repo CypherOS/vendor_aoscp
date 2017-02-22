@@ -6,7 +6,7 @@ SUPERUSER_EMBEDDED := true
 # Format: Major.minor.maintenance(-TAG)
 export AOSCP_VERSION := 3.6
 
-export AOSCP_RELEASE_ID := CR.NR6.36.R1-0112
+export AOSCP_RELEASE_ID := CR.NR22.36.R1-0223
 
 export AOSCP_API_LEVEL := Jamocha
 

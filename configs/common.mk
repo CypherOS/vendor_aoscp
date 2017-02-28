@@ -1,7 +1,5 @@
 PRODUCT_BRAND ?= aoscp
 
-SUPERUSER_EMBEDDED := true
-
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
 export AOSCP_VERSION := 3.6
@@ -192,9 +190,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
 
 # Substratum ThemeInterfacer
 PRODUCT_PACKAGES += \

@@ -17,6 +17,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
+	
+# Luna HAF
+PRODUCT_PACKAGES += \
+    org.aoscp.hardware \
+    org.aoscp.hardware.xml
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \

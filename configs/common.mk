@@ -196,9 +196,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
 
-# OMS MASQUERADE
+# Substratum ThemeInterfacer
 PRODUCT_PACKAGES += \
-    masquerade
+    ThemeInterfacer
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aoscp/overlay/common

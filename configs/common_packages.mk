@@ -25,11 +25,10 @@ PRODUCT_PACKAGES += \
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \
-    Browser \
     Calculator \
     Luna \
-    WallpaperPicker \
-    Recorder
+    Recorder \
+    WallpaperPicker
 
 # AOSCP Updates
 PRODUCT_PACKAGES +=  \

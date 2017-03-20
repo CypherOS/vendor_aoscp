@@ -6,7 +6,7 @@ export AOSCP_VERSION := 3.6.1
 
 export AOSCP_RELEASE_ID := CR.NR25.36.R2-0317
 
-export AOSCP_API_LEVEL := Muffin
+export AOSCP_API_LEVEL := Macchiato
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 

@@ -2,9 +2,9 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 3.6.1
+export AOSCP_VERSION := 3.6.2
 
-export AOSCP_RELEASE_ID := CR.NR25.36.R2-0317
+export AOSCP_RELEASE_ID := CR.N-MR2.362.R3-0421
 
 export AOSCP_API_LEVEL := Macchiato
 

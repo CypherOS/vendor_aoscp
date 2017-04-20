@@ -57,7 +57,7 @@
     <bool name="config_enableLockScreenRotation">true</bool>
 
     <!-- Whether to persist the notification for when a usb drive device is plugged in -->
-    <bool name="config_persistUsbDriveNotification">true</bool>
+    <bool name="config_persistUsbDriveNotification">false</bool>
 	
 	<!-- Hide Project Fi app unless it is being used -->
     <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">

@@ -154,6 +154,9 @@ service sysinit /system/bin/sysinit
     user root
     oneshot
     disabled
+	
+# allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
 
 # adb over network
 on property:adb.network.port=*

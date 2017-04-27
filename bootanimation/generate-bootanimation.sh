@@ -12,6 +12,11 @@ FPS="60"
 
 OUT="$ANDROID_PRODUCT_OUT/obj/BOOTANIMATION"
 
+if [ "${HALF_RES}" == "true" ]; then
+    WIDTH=$(($WIDTH / 2))
+    HEIGHT=$(($HEIGHT / 2))
+fi
+
 #Set image size
 RESOLUTION="${WIDTH}^x${HEIGHT}^>"
 

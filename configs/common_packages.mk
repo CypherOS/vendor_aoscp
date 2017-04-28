@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     Luna \
     Recorder \
+	Turbo \
     WallpaperPicker
 
 # AOSCP Updates

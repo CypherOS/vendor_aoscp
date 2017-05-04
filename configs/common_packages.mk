@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     Luna \
     Recorder \
+	Turbo \
     WallpaperPicker
 
 # AOSCP Updates
@@ -91,5 +92,4 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
-    su
+    procrank

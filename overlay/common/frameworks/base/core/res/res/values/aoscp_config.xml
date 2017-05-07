@@ -17,7 +17,7 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-	<!-- Whether cpu boost is enabled right after boot -->
-    <bool name="config_enableCpuBoostOnBoot">true</bool>
+	<!-- Whether cpu boost is enabled right after boot
+    <bool name="config_enableCpuBoostOnBoot">true</bool> -->
 	
 </resources>

@@ -1,2 +1,3 @@
 # AOSCP Services
 lunahardware                              u:object_r:aoscp_hardware_service:s0
+edgegestureservice                        u:object_r:edgegesture_service:s0

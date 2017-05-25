@@ -77,13 +77,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
-	ro.setupwizard.network_required=false \
+    ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
-	ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
-	ro.setupwizard.rotation_locked=true \
-    ro.opa.eligible_device=true
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+    ro.setupwizard.rotation_locked=true
 
 #SELinux
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -181,10 +180,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
-# Storage manager
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.storage_manager.enabled=true
-
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aoscp/overlay/common
 
@@ -194,5 +189,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
+
+# Google Pixel UI
+-include vendor/overlay/aoscp/configs/common.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)

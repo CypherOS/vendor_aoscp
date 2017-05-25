@@ -3,8 +3,8 @@ PRODUCT_BRAND ?= aoscp
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
 export AOSCP_VERSION := 4.0-Beta1
-
 export AOSCP_API_LEVEL := H
+export AOSCP_RELEASE := CR.N-MR2.40.B1-0526
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 
@@ -22,6 +22,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(ROM_VERSION) \
     ro.aoscp.version=$(AOSCP_VERSION) \
+	ro.aoscp.release=$(AOSCP_RELEASE) \
     ro.aoscp.device=$(AOSCP_DEVICE) \
     ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \

@@ -28,7 +28,15 @@ PRODUCT_PACKAGES += \
 
 # AOSCP Updates
 PRODUCT_PACKAGES +=  \
-   COTA
+    COTA
+   
+# Substratum ThemeInterfacer
+PRODUCT_PACKAGES += \
+    ThemeInterfacer
+	
+# Substratum Verified
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.substratum.verified=true
 
 # Extra tools
 PRODUCT_PACKAGES += \

@@ -2,9 +2,9 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 4.0-Beta3
-export AOSCP_API_LEVEL := H
-export AOSCP_RELEASE := CR.N-MR2.40.B1-0526
+export AOSCP_VERSION := 4.0.3
+export AOSCP_API_LEVEL := Beta
+export AOSCP_RELEASE := OPU-4x0.30616
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 

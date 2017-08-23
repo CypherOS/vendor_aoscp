@@ -19,25 +19,25 @@ PRODUCT_PACKAGES += \
     librsjni
 
 # AOSCP Packages
-PRODUCT_PACKAGES += \
-    Bolt \
-    Calculator \
-    Luna \
-    Recorder \
-	Turbo \
-    WallpaperPicker
+#PRODUCT_PACKAGES += \
+    #Bolt \
+    #Calculator \
+    #Luna \
+    #Recorder \
+	#Turbo \
+    #WallpaperPicker
 
 # AOSCP Updates
-PRODUCT_PACKAGES +=  \
-    COTA
+#PRODUCT_PACKAGES +=  \
+    #COTA
    
 # Substratum ThemeInterfacer
-PRODUCT_PACKAGES += \
-    ThemeInterfacer
+#PRODUCT_PACKAGES += \
+    #ThemeInterfacer
 	
 # Substratum Verified
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.substratum.verified=true
+#PRODUCT_PROPERTY_OVERRIDES += \
+    #ro.substratum.verified=true
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -88,11 +88,11 @@ PRODUCT_PACKAGES += \
     media_codecs_ffmpeg.xml
 	
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+    #telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+    #telephony-ext
 
 PRODUCT_PACKAGES += \
     procmem \

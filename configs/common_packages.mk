@@ -22,10 +22,10 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
     #Bolt \
     #Calculator \
-    #Luna \
+    Luna \
     #Recorder \
 	#Turbo \
-    #WallpaperPicker
+    WallpaperPicker
 
 # AOSCP Updates
 #PRODUCT_PACKAGES +=  \

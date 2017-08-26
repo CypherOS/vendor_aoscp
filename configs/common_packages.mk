@@ -19,12 +19,12 @@ PRODUCT_PACKAGES += \
     librsjni
 
 # AOSCP Packages
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     #Bolt \
     #Calculator \
     Luna \
     #Recorder \
-	#Turbo \
+    #Turbo \
     WallpaperPicker
 
 # AOSCP Updates

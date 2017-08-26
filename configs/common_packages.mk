@@ -20,11 +20,7 @@ PRODUCT_PACKAGES += \
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \
-    #Bolt \
-    #Calculator \
     Luna \
-    #Recorder \
-    #Turbo \
     WallpaperPicker
 
 # AOSCP Updates

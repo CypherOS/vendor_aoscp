@@ -4,4 +4,5 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/aoscp/sepolicy/qcom
+    vendor/aoscp/sepolicy/qcom/common \
+    vendor/aoscp/sepolicy/qcom/$(TARGET_BOARD_PLATFORM)

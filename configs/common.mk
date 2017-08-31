@@ -2,9 +2,9 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 5.0-Alpha
-export AOSCP_API_LEVEL := FC
-export AOSCP_RELEASE := OPU-4x1.00813MJ
+export AOSCP_VERSION := 5.0
+export AOSCP_API_LEVEL := FC-Preview
+export AOSCP_RELEASE := OFU-5x0.00901MJ
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 
@@ -28,7 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
     ro.aoscp.api=$(AOSCP_API_LEVEL)
 
-export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_DEVICE)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE)
+export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_DEVICE)-$(AOSCP_RELEASE)-$(AOSCP_BUILDTYPE)
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension

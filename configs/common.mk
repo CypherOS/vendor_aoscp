@@ -4,7 +4,7 @@ PRODUCT_BRAND ?= aoscp
 # Format: Major.minor.maintenance(-TAG)
 export AOSCP_VERSION := 5.0
 export AOSCP_API_LEVEL := FC-Preview
-export AOSCP_RELEASE := OFU-5x0.00901MJ
+export AOSCP_RELEASE := OFU-5x0.0$(shell date -u +%m%d)MJ
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 

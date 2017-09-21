@@ -2,9 +2,9 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 # Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 4.1.1
+export AOSCP_VERSION := 4.1.2
 export AOSCP_API_LEVEL := Honeybun
-export AOSCP_RELEASE := OPU-4x1.00813MJ
+export AOSCP_RELEASE := OPU-4x1.20921MI
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 

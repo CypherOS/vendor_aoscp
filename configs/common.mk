@@ -22,13 +22,13 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(ROM_VERSION) \
     ro.aoscp.version=$(AOSCP_VERSION) \
-	ro.aoscp.release=$(AOSCP_RELEASE) \
+    ro.aoscp.release=$(AOSCP_RELEASE) \
     ro.aoscp.device=$(AOSCP_DEVICE) \
     ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
     ro.aoscp.api=$(AOSCP_API_LEVEL)
 
-export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_RELEASE)-$(AOSCP_BUILDTYPE)
+export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_RELEASE)-$(AOSCP_BUILDTYPE).zip
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension

@@ -28,7 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
     ro.aoscp.api=$(AOSCP_API_LEVEL)
 
-export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_RELEASE)-$(AOSCP_BUILDTYPE).zip
+export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE)
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension

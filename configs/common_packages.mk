@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Bolt \
     Luna \
+	MusicX \
 	Recorder \
     WallpaperPicker
 

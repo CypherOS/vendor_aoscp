@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
 # AOSCP Packages
 PRODUCT_PACKAGES += \
     Bolt \
+	GalleryX \
     Luna \
 	MusicX \
 	Recorder \

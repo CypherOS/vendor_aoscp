@@ -179,7 +179,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 # Charging sounds
 PRODUCT_COPY_FILES += \
     vendor/aoscp/sounds/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
-    vendor/aoscp/sounds/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg
+    vendor/aoscp/sounds/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg \
+	vendor/aoscp/sounds/effects/GoodBattery.ogg:system/media/audio/ui/GoodBattery.ogg
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aoscp/configs/partner_gms.mk

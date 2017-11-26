@@ -129,9 +129,8 @@ PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
-# AOSCP-specific init file
-PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/etc/init.local.rc:root/init.aoscp.rc \
+# AOSCP specific init file
+PRODUCT_COPY_FILES += vendor/aoscp/prebuilt/common/etc/init.aoscp.rc:root/init.aoscp.rc
 
 # Installer
 PRODUCT_COPY_FILES += \

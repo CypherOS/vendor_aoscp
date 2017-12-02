@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji \
     Terminal \
-    LiveWallpapersPicker \
     PhotoTable
 
 # Include explicitly to work around GMS issues
@@ -24,8 +23,7 @@ PRODUCT_PACKAGES += \
 	GalleryX \
     Luna \
 	MusicX \
-	Recorder \
-    WallpaperPicker
+	Recorder
 
 # AOSCP Updates
 #PRODUCT_PACKAGES +=  \

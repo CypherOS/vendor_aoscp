@@ -20,10 +20,13 @@ PRODUCT_PACKAGES += \
 # AOSCP Packages
 PRODUCT_PACKAGES += \
     Bolt \
-	GalleryX \
+    GalleryX \
     Luna \
-	MusicX \
-	Recorder
+    MusicX \
+    Recorder
+
+# Google Packages
+PRODUCT_PACKAGES += Wallpapers
 
 # AOSCP Updates
 #PRODUCT_PACKAGES +=  \

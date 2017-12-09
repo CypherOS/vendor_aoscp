@@ -185,7 +185,7 @@ PRODUCT_COPY_FILES += \
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
 
-# Google Pixel UI
--include vendor/overlay/aoscp/configs/common.mk
+# Overlay vendor extension
+-include vendor/aoscp-overlay/configs/common.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)

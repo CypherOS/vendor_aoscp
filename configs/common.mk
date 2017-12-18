@@ -184,6 +184,7 @@ PRODUCT_COPY_FILES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
+-include vendor/aoscp/configs/common_theme_packages.mk
 
 # Overlay vendor extension
 -include vendor/aoscp-overlay/configs/common.mk

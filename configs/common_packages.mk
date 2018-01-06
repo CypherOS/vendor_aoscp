@@ -29,8 +29,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += Wallpapers
 
 # AOSCP Updates
-#PRODUCT_PACKAGES +=  \
-    #COTA
+ifeq ($(AOSCP_BUILDTYPE),official)
+PRODUCT_PACKAGES += COTA
+endif
    
 # Substratum ThemeInterfacer
 #PRODUCT_PACKAGES += \

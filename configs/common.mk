@@ -90,9 +90,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Titania.ogg \
-    ro.config.notification_sound=Tethys.ogg \
-    ro.config.alarm_alert=Argon.ogg
+    ro.config.ringtone=Triton.ogg \
+    ro.config.notification_sound=Orders_up.ogg \
+    ro.config.alarm_alert=Bright_morning.ogg
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!

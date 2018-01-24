@@ -65,6 +65,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.recorder.show_manufacturer_and_model=true
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \

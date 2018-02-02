@@ -32,3 +32,7 @@ PRODUCT_PACKAGES += \
 # Teal
 PRODUCT_PACKAGES += \
     TealTheme
+	
+# White
+PRODUCT_PACKAGES += \
+    WhiteTheme

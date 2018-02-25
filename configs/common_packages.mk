@@ -22,8 +22,7 @@ PRODUCT_PACKAGES += \
     Bolt \
     GalleryX \
     Luna \
-    MusicX \
-    Recorder
+    MusicX
 
 # Google Packages
 PRODUCT_PACKAGES += Wallpapers

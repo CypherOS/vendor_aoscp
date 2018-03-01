@@ -23,7 +23,11 @@ PRODUCT_PACKAGES += \
     GalleryX \
     Luna \
     MusicX
-
+	
+# Providers
+PRODUCT_PACKAGES += \
+    OmniJaws
+	
 # Google Packages
 PRODUCT_PACKAGES += Wallpapers
 

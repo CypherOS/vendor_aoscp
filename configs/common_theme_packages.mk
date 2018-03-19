@@ -1,5 +1,5 @@
 # Theme vendor extension
--include vendor/aoscp-themes/Android.mk
+-include vendor/aoscp/themes/Android.mk
 
 # Deep Purple
 PRODUCT_PACKAGES += \
@@ -36,3 +36,6 @@ PRODUCT_PACKAGES += \
 # White
 PRODUCT_PACKAGES += \
     WhiteTheme
+	
+# Set Pixel blue light theme on Gboard
+PRODUCT_PROPERTY_OVERRIDES += ro.com.google.ime.theme_id=5

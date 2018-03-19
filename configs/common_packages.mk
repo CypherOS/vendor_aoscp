@@ -3,7 +3,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
     LatinIME \
-    LatinImeDictionaryPack \
     Stk
 
 # Optional packages
@@ -23,26 +22,13 @@ PRODUCT_PACKAGES += \
     GalleryX \
     Luna \
     MusicX
-	
+
 # Providers
-PRODUCT_PACKAGES += \
-    OmniJaws
-	
+#PRODUCT_PACKAGES += \
+    #OmniJaws
+
 # Google Packages
 PRODUCT_PACKAGES += Wallpapers
-
-# AOSCP Updates
-ifeq ($(AOSCP_BUILDTYPE),official)
-PRODUCT_PACKAGES += COTA
-endif
-   
-# Substratum ThemeInterfacer
-#PRODUCT_PACKAGES += \
-    #ThemeInterfacer
-	
-# Substratum Verified
-#PRODUCT_PROPERTY_OVERRIDES += \
-    #ro.substratum.verified=true
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -71,7 +57,7 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
-	
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
@@ -91,13 +77,6 @@ PRODUCT_PACKAGES += \
     libffmpeg_extractor \
     libffmpeg_omx \
     media_codecs_ffmpeg.xml
-	
-# Telephony
-#PRODUCT_PACKAGES += \
-    #telephony-ext
-
-#PRODUCT_BOOT_JARS += \
-    #telephony-ext
 
 PRODUCT_PACKAGES += \
     procmem \

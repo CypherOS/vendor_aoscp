@@ -1,14 +1,13 @@
 PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
-# Format: Major.minor.maintenance(-TAG)
-export AOSCP_VERSION := 5.3.1
-export AOSCP_API_LEVEL := Cinnabun
-export AOSCP_RELEASE := OFU-5x0.0$(shell date -u +%m%d)MJ
+export AOSCP_VERSION := 6.0.0
+export AOSCP_CODENAME := Parfait
+export AOSCP_BUILD_NUMBER := CBNP.8102.91.30241
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 
-export ROM_VERSION := $(AOSCP_VERSION)-$(shell date -u +%Y%m%d)
+export ROM_VERSION := $(AOSCP_VERSION)-$(AOSCP_BUILD_NUMBER)
 
 ifneq ($(RELEASE_TYPE),)
     AOSCP_BUILDTYPE := $(RELEASE_TYPE)
@@ -22,46 +21,15 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(ROM_VERSION) \
     ro.aoscp.version=$(AOSCP_VERSION) \
-    ro.aoscp.release=$(AOSCP_RELEASE) \
     ro.aoscp.device=$(AOSCP_DEVICE) \
     ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
-    ro.aoscp.api=$(AOSCP_API_LEVEL)
+    ro.aoscp.codename=$(AOSCP_CODENAME) \
+    ro.aoscp.build=$(AOSCP_BUILD_NUMBER)
 
-export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE).zip
+export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(AOSCP_BUILD_NUMBER)-$(AOSCP_BUILDTYPE).zip
 
-ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
-# determine the smaller dimension
-TARGET_BOOTANIMATION_SIZE := $(shell \
-  if [ "$(TARGET_SCREEN_WIDTH)" -lt "$(TARGET_SCREEN_HEIGHT)" ]; then \
-    echo $(TARGET_SCREEN_WIDTH); \
-  else \
-    echo $(TARGET_SCREEN_HEIGHT); \
-  fi )
-
-# get a sorted list of the sizes
-bootanimation_sizes := $(subst .zip,, $(shell ls vendor/aoscp/prebuilt/bootanimation))
-bootanimation_sizes := $(shell echo -e $(subst $(space),'\n',$(bootanimation_sizes)) | sort -rn)
-
-# find the appropriate size and set
-define check_and_set_bootanimation
-$(eval TARGET_BOOTANIMATION_NAME := $(shell \
-  if [ -z "$(TARGET_BOOTANIMATION_NAME)" ]; then
-    if [ "$(1)" -le "$(TARGET_BOOTANIMATION_SIZE)" ]; then \
-      echo $(1); \
-      exit 0; \
-    fi;
-  fi;
-  echo $(TARGET_BOOTANIMATION_NAME); ))
-endef
-$(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
-
-ifeq ($(TARGET_BOOTANIMATION_HALF_RES),true)
-PRODUCT_BOOTANIMATION := vendor/aoscp/prebuilt/bootanimation/halfres/$(TARGET_BOOTANIMATION_NAME).zip
-else
-PRODUCT_BOOTANIMATION := vendor/aoscp/prebuilt/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
-endif
-endif
+-include vendor/aoscp/configs/bootanimation.mk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -94,10 +62,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Orders_up.ogg \
     ro.config.alarm_alert=Bright_morning.ogg
 
-ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
-endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -152,9 +118,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-PRODUCT_COPY_FILES += \
-    vendor/aoscp/configs/permissions/com.aoscp.android.xml:system/etc/permissions/com.aoscp.android.xml
-
 # ExFAT support
 WITH_EXFAT ?= true
 ifeq ($(WITH_EXFAT),true)
@@ -179,14 +142,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 PRODUCT_COPY_FILES += \
     vendor/aoscp/sounds/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
     vendor/aoscp/sounds/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg \
-	vendor/aoscp/sounds/effects/GoodBattery.ogg:system/media/audio/ui/GoodBattery.ogg
+    vendor/aoscp/sounds/effects/GoodBattery.ogg:system/media/audio/ui/GoodBattery.ogg
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aoscp/configs/partner_gms.mk
 -include vendor/aoscp/configs/common_packages.mk
 -include vendor/aoscp/configs/common_theme_packages.mk
-
-# Overlay vendor extension
--include vendor/aoscp-overlay/configs/common.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)

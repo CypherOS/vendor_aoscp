@@ -71,8 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aoscp/prebuilt/common/bin/50-aoscp.sh:system/addon.d/50-aoscp.sh \
     vendor/aoscp/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
-    vendor/aoscp/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/aoscp/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    vendor/aoscp/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
@@ -86,7 +85,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/aoscp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/aoscp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/aoscp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
@@ -100,11 +98,7 @@ PRODUCT_COPY_FILES += vendor/aoscp/prebuilt/common/etc/init.aoscp.rc:root/init.a
 
 # Installer
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
-    vendor/aoscp/prebuilt/common/etc/persist.conf:system/etc/persist.conf
-
-PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
+    vendor/aoscp/prebuilt/common/bin/persist.sh:install/bin/persist.sh
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \

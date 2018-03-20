@@ -2,5 +2,5 @@
 
 while read -r device || [[ -n $device ]]
 do
-    add_lunch_combo "aoscp_$device-userdebug"
+    add_lunch_combo "aoscp_$device-user"
 done < vendor/aoscp/aoscp.devices

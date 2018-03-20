@@ -10,7 +10,7 @@ Initializing the Repository
 
 Init core trees without any device/kernel/vendor :
 
-    $ repo init -u https://github.com/CypherOS/platform_manifest.git -b oreo-mr1-release
+    $ repo init -u https://github.com/CypherOS/platform_manifest.git -b parfait-release
 
 Sync our repository :
 
@@ -47,9 +47,9 @@ Creating your thread
 You got your build to compile. Congrats! Now it's time to share it with the world! AOSCP threads simple so it's not much work left to do here.
 Let's start with your thread name. If you are creating a thread for a device that's officially supported by CypherOS, here's how you need to format it:
 
-    [ROM][OFFICIAL][ANDROID VERSION_TAG]CypherOS "Version" "Version name"[DEVICE]
+    [ROM][OFFICIAL][ANDROID VERSION_TAG]CypherOS "Version"[DEVICE]
 	
-For example: [ROM][UNOFFICIAL][8.1.0_r7]CypherOS 5.1 FunnelCake[Angler]
+For example: [ROM][UNOFFICIAL][8.1.0_r18]CypherOS 6.0.0[Angler]
 Simple right? Now, if you're creating a thread for a device that's not officially supported by CypherOS, [OFFICIAL] needs to be replaced with [UNOFFICIAL]
 to ensure users know what kind of build they're running. This is important, as it prevents alot of questions and concerns about bugs etc. that weren't generated
 by our team. 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.aoscp.accent.oceanic"
+    platformBuildVersionCode="26"
+    platformBuildVersionName="8.0.0">
+
+    <overlay android:priority="13" android:targetPackage="android" />
+
+    <application android:hasCode="false"
+                 android:label="Oceanic">
+
+                <meta-data
+                    android:name="Color_manager"
+                    android:value="colormanager" />
+    </application>
+</manifest>

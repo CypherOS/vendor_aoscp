@@ -1,8 +1,8 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_PACKAGE_NAME := DeepPurpleTheme
-LOCAL_RRO_THEME := DeepPurpleTheme
+LOCAL_PACKAGE_NAME := GreenTheme
+LOCAL_RRO_THEME := GreenTheme
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(call all-subdir-java-files)

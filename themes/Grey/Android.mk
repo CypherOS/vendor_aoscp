@@ -1,8 +1,8 @@
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_PACKAGE_NAME := SkyBlueTheme
-LOCAL_RRO_THEME := SkyBlueTheme
+LOCAL_PACKAGE_NAME := GreyTheme
+LOCAL_RRO_THEME := GreyTheme
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := $(call all-subdir-java-files)

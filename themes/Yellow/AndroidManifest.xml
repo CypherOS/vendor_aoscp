@@ -4,8 +4,13 @@
     platformBuildVersionCode="26"
     platformBuildVersionName="8.0.0">
 
-    <overlay android:priority="8" android:targetPackage="android" />
+    <overlay android:priority="24" android:targetPackage="android" />
 
     <application android:hasCode="false"
-                 android:label="Yellow" />
+                 android:label="Yellow">
+
+                <meta-data
+                    android:name="Color_manager"
+                    android:value="colormanager" />
+    </application>
 </manifest>

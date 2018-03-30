@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="user_icon_1">#fff06292</color>
+    <color name="user_icon_2">#fff06292</color>
+    <color name="user_icon_3">#fff06292</color>
+    <color name="user_icon_4">#fff06292</color>
+    <color name="user_icon_5">#fff06292</color>
+    <color name="user_icon_6">#fff06292</color>
+    <color name="user_icon_7">#fff06292</color>
+    <color name="user_icon_8">#fff06292</color>
+    <color name="system_error">#fff06292</color>
+    <color name="accent_device_default_700">#ffe91e63</color>
+    <color name="accent_device_default_light">#ffec407a</color>
+    <color name="accent_device_default_dark">#fff06292</color>
+    <color name="accent_device_default_50">#fffce4ec</color>
+</resources>

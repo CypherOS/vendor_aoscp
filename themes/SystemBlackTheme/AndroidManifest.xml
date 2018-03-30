@@ -2,9 +2,14 @@
     package="co.aoscp.theme.black"
     android:versionCode="1"
     android:versionName="1.0">
-	
+
     <overlay android:targetPackage="android" android:priority="2"/>
 
     <application android:hasCode="false"
-                 android:label="Black" />
+                 android:label="Black">
+
+                <meta-data
+                    android:name="Color_manager"
+                    android:value="colormanager" />
+    </application>
 </manifest>

@@ -51,5 +51,13 @@ PRODUCT_PACKAGES += \
     GreyTheme\
     WhiteTheme
 
+# Navbar Themes
+PRODUCT_PACKAGES += \
+    NavigationPixelTheme \
+    NavigationPixelHolaTheme \
+    NavigationSamsungTheme \
+    NavigationXperiaTheme \
+    NavigationOnePlusTheme
+
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += ro.com.google.ime.theme_id=5

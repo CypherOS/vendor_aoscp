@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.aoscp.navbar.oneplus"
+    platformBuildVersionCode="26"
+    platformBuildVersionName="8.0.0">
+
+    <overlay android:priority="34" android:targetPackage="com.android.systemui" />
+
+    <application android:hasCode="false"
+                 android:label="OnePlus">
+
+                <meta-data
+                    android:name="Color_manager"
+                    android:value="colormanager" />
+    </application>
+</manifest>

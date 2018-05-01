@@ -5,9 +5,4 @@ PRODUCT_COPY_FILES += \
 # Telephony packages
 PRODUCT_PACKAGES += \
     messaging \
-    Stk \
     CellBroadcastReceiver
-
-# Default ringtone
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Orion.ogg

@@ -2,8 +2,7 @@
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
-    LatinIME \
-    Stk
+    LatinIME
 
 # Optional packages
 PRODUCT_PACKAGES += \

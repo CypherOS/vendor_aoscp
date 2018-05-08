@@ -19972,6 +19972,14 @@
       apn="vinternet.com"
       type="default,supl"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="840"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Videocon MMS"
       mcc="405"
       mnc="841"
@@ -20269,6 +20277,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="854"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405855)"
       mcc="405"
       mnc="855"
@@ -20289,6 +20305,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="855"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405856)"
       mcc="405"
@@ -20311,6 +20335,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="856"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405857)"
       mcc="405"
       mnc="857"
@@ -20331,6 +20363,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="857"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405858)"
       mcc="405"
@@ -20353,6 +20393,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="858"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405859)"
       mcc="405"
       mnc="859"
@@ -20373,6 +20421,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="859"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405860)"
       mcc="405"
@@ -20395,6 +20451,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="860"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405861)"
       mcc="405"
       mnc="861"
@@ -20415,6 +20479,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="861"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405862)"
       mcc="405"
@@ -20437,6 +20509,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="862"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405863)"
       mcc="405"
       mnc="863"
@@ -20457,6 +20537,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="863"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405864)"
       mcc="405"
@@ -20479,6 +20567,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="864"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405865)"
       mcc="405"
       mnc="865"
@@ -20499,6 +20595,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="865"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405866)"
       mcc="405"
@@ -20521,6 +20625,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="866"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  /> 
   <apn carrier="Loop Internet (405867)"
       mcc="405"
       mnc="867"
@@ -20541,6 +20653,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="867"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405868)"
       mcc="405"
@@ -20563,6 +20683,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="868"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405869)"
       mcc="405"
       mnc="869"
@@ -20583,6 +20711,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="869"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405870)"
       mcc="405"
@@ -20605,6 +20741,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="870"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405871)"
       mcc="405"
       mnc="871"
@@ -20625,6 +20769,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="871"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Loop Internet (405872)"
       mcc="405"
@@ -20647,6 +20799,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="872"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405873)"
       mcc="405"
       mnc="873"
@@ -20668,6 +20828,14 @@
       roaming_protocol="IP"
       carrier_enabled="true"
   />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="873"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+  />
   <apn carrier="Loop Internet (405874)"
       mcc="405"
       mnc="874"
@@ -20688,6 +20856,14 @@
       protocol="IP"
       roaming_protocol="IP"
       carrier_enabled="true"
+  />
+  <apn carrier="Internet"
+      apn="jionet"
+      mcc="405"
+      mnc="874"
+      type="default"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
   />
   <apn carrier="Uninor Internet"
       mcc="405"

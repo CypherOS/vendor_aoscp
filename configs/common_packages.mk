@@ -22,6 +22,9 @@ PRODUCT_PACKAGES += \
     Luna \
     MusicX
 
+# Aoscp OTA
+PRODUCT_PACKAGES += COTA
+
 # Providers
 #PRODUCT_PACKAGES += \
     #OmniJaws

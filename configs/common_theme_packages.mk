@@ -60,4 +60,4 @@ PRODUCT_PACKAGES += \
     NavigationOnePlusTheme
 
 # Set Pixel blue light theme on Gboard
-PRODUCT_GENERIC_PROPERTIES += ro.com.google.ime.theme_id=5
+PRODUCT_SYSTEM_DEFAULT_PROPERTIESS += ro.com.google.ime.theme_id=5

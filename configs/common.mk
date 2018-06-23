@@ -19,7 +19,7 @@ ifndef AOSCP_BUILDTYPE
 endif
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.modversion=$(ROM_VERSION) \
+    ro.modversion=$(AOSCP_VERSION)-$(shell date -u +%Y%m%d) \
     ro.aoscp.version=$(AOSCP_VERSION) \
     ro.aoscp.device=$(AOSCP_DEVICE) \
     ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \

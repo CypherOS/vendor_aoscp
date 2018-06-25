@@ -3,5 +3,8 @@
 # inherit from aoscp
 #
 
-BOARD_SEPOLICY_DIRS += \
-    vendor/aoscp/sepolicy/common
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    vendor/aoscp/sepolicy/common/public
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    vendor/aoscp/sepolicy/common/private

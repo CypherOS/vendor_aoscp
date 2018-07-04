@@ -120,9 +120,12 @@ PRODUCT_COPY_FILES += \
 
 # ExFAT support
 PRODUCT_PACKAGES += \
-    mount.exfat \
     fsck.exfat \
     mkfs.exfat
+
+ifneq ($(TARGET_KERNEL_HAVE_EXFAT),true)
+    PRODUCT_PACKAGES += mount.exfat
+endif
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.sf.omx-plugin=libffmpeg_omx.so \

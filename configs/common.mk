@@ -29,7 +29,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.aoscp.build=$(AOSCP_BUILD_NUMBER) \
     ro.aoscp.maintenance_patch=$(AOSCP_MAINTENANCE_PATCH)
 
-export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(AOSCP_BUILD_NUMBER)-$(AOSCP_BUILDTYPE).zip
+export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE).zip
 
 -include vendor/aoscp/configs/bootanimation.mk
 

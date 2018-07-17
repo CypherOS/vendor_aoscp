@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat
 
-ifneq ($(TARGET_KERNEL_HAVE_EXFAT),true)
+ifeq ($(TARGET_EXFAT_DRIVER),)
     PRODUCT_PACKAGES += mount.exfat
 endif
 

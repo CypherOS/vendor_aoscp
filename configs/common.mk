@@ -1,10 +1,10 @@
 PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
-export AOSCP_VERSION := 6.0.0
+export AOSCP_VERSION := 6.0.1
 export AOSCP_CODENAME := Parfait
-export AOSCP_BUILD_NUMBER := CBNP.8102.$(shell date -u +%d).$(shell date -u +%m)052
-export AOSCP_MAINTENANCE_PATCH := 2018-07-17
+export AOSCP_BUILD_NUMBER := CBNP.8102.$(shell date -u +%d).$(shell date -u +%m)008
+export AOSCP_MAINTENANCE_PATCH := 2018-07-25
 
 AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
 

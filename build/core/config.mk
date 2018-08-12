@@ -16,3 +16,9 @@
 
 BUILD_MAVEN_PREBUILT := $(TOP)/vendor/aoscp/build/core/maven_artifact.mk
 PUBLISH_MAVEN_PREBUILT := $(TOP)/vendor/aoscp/build/core/maven_artifact_publish.mk
+
+# Rules for MTK targets
+include $(TOPDIR)vendor/aoscp/build/core/mtk_target.mk
+
+# Rules for QCOM targets
+include $(TOPDIR)vendor/aoscp/build/core/qcom_target.mk

@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Night Mode: Boolean indicating whether the HWC setColorTransform 
-	     function can be performed efficiently in hardware. -->
+         function can be performed efficiently in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- Controls the WiFi wakeup feature.
@@ -25,5 +25,8 @@
           1 = Available.
     -->
     <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
+
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
 </resources>

@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Bolt \
     GalleryX \
-    Luna \
+    LunaQuickStep \
     MusicX
 
 # Aoscp OTA

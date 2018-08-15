@@ -2,13 +2,10 @@ PRODUCT_BRAND ?= aoscp
 
 # Include versioning information
 export AOSCP_VERSION := 7.0.0
-export AOSCP_CODENAME := Parfait
-export AOSCP_BUILD_NUMBER := CBNP.8102.$(shell date -u +%d).$(shell date -u +%m)008
-export AOSCP_MAINTENANCE_PATCH := 2018-07-25
+export VERSION_CODE := Poundcake
 
-AOSCP_DISPLAY_VERSION := $(AOSCP_VERSION)
-
-export ROM_VERSION := $(AOSCP_VERSION)-$(AOSCP_BUILD_NUMBER)
+export BUILD_NUMBER := CBNP.8102.$(shell date -u +%d).$(shell date -u +%m)841
+export MAINTENANCE_PATCH := 2018-08-15
 
 ifneq ($(RELEASE_TYPE),)
     AOSCP_BUILDTYPE := $(RELEASE_TYPE)
@@ -22,12 +19,12 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.modversion=$(AOSCP_VERSION)-$(shell date -u +%Y%m%d) \
     ro.aoscp.version=$(AOSCP_VERSION) \
+    ro.aoscp.version_code=$(VERSION_CODE) \
     ro.aoscp.device=$(AOSCP_DEVICE) \
-    ro.aoscp.display.version=$(AOSCP_DISPLAY_VERSION) \
+    ro.aoscp.display.version=$(AOSCP_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
-    ro.aoscp.codename=$(AOSCP_CODENAME) \
-    ro.aoscp.build=$(AOSCP_BUILD_NUMBER) \
-    ro.aoscp.maintenance_patch=$(AOSCP_MAINTENANCE_PATCH)
+    ro.aoscp.build=$(BUILD_NUMBER) \
+    ro.aoscp.maintenance_patch=$(MAINTENANCE_PATCH)
 
 export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE).zip
 

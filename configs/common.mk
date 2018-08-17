@@ -1,17 +1,12 @@
 PRODUCT_BRAND ?= aoscp
+LOCAL_PATH := vendor/aoscp/
 
-# Include versioning information
-export AOSCP_VERSION := 7.0.0
-export VERSION_CODE := Poundcake
+include $(LOCAL_PATH)configs/version_defaults.mk
+include $(LOCAL_PATH)configs/bootanimation.mk
+include $(LOCAL_PATH)configs/packages.mk
+include $(LOCAL_PATH)configs/themes.mk
 
-export BUILD_NUMBER := CBNP.8102.$(shell date -u +%d).$(shell date -u +%m)841
-export MAINTENANCE_PATCH := 2018-08-15
-
-ifneq ($(RELEASE_TYPE),)
-    AOSCP_BUILDTYPE := $(RELEASE_TYPE)
-endif
-
-#We build unofficial by default
+# We build unofficial by default
 ifndef AOSCP_BUILDTYPE
     AOSCP_BUILDTYPE := unofficial
 endif
@@ -19,16 +14,14 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.modversion=$(AOSCP_VERSION)-$(shell date -u +%Y%m%d) \
     ro.aoscp.version=$(AOSCP_VERSION) \
-    ro.aoscp.version_code=$(VERSION_CODE) \
-    ro.aoscp.device=$(AOSCP_DEVICE) \
+    ro.aoscp.version_code=$(PLATFORM_LUNA_VERSION_CODE) \
+    ro.aoscp.device=$(AOSCP_BUILD) \
     ro.aoscp.display.version=$(AOSCP_VERSION) \
     ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
-    ro.aoscp.build=$(BUILD_NUMBER) \
-    ro.aoscp.maintenance_patch=$(MAINTENANCE_PATCH)
+    ro.aoscp.build=$(PLATFORM_LUNA_BUILD_NUMBER) \
+    ro.aoscp.maintenance_patch=$(PLATFORM_LUNA_MAINTENANCE_PATCH)
 
 export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE).zip
-
--include vendor/aoscp/configs/bootanimation.mk
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -70,42 +63,42 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIESS += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aoscp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aoscp/prebuilt/common/bin/50-aoscp.sh:system/addon.d/50-aoscp.sh \
-    vendor/aoscp/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
-    vendor/aoscp/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh
+    $(LOCAL_PATH)prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    $(LOCAL_PATH)prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    $(LOCAL_PATH)prebuilt/common/bin/50-aoscp.sh:system/addon.d/50-aoscp.sh \
+    $(LOCAL_PATH)prebuilt/common/bin/blacklist:system/addon.d/blacklist \
+    $(LOCAL_PATH)prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
+    $(LOCAL_PATH)configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
+    $(LOCAL_PATH)prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
-    vendor/aoscp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/aoscp/prebuilt/common/bin/sysinit:system/bin/sysinit
+    $(LOCAL_PATH)prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
+    $(LOCAL_PATH)prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    $(LOCAL_PATH)prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    $(LOCAL_PATH)prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
 # AOSCP specific init file
-PRODUCT_COPY_FILES += vendor/aoscp/prebuilt/common/etc/init.aoscp.rc:root/init.aoscp.rc
+PRODUCT_COPY_FILES += $(LOCAL_PATH)prebuilt/common/etc/init.aoscp.rc:root/init.aoscp.rc
 
 # Installer
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/bin/persist.sh:install/bin/persist.sh
+    $(LOCAL_PATH)prebuilt/common/bin/persist.sh:install/bin/persist.sh
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    $(LOCAL_PATH)prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -129,20 +122,17 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/aoscp/overlay/common
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)overlay/common
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 # Charging sounds
 PRODUCT_COPY_FILES += \
-    vendor/aoscp/sounds/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
-    vendor/aoscp/sounds/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg \
-    vendor/aoscp/sounds/effects/GoodBattery.ogg:system/media/audio/ui/GoodBattery.ogg
+    $(LOCAL_PATH)sounds/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
+    $(LOCAL_PATH)sounds/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg \
+    $(LOCAL_PATH)sounds/effects/GoodBattery.ogg:system/media/audio/ui/GoodBattery.ogg
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/aoscp/configs/partner_gms.mk
--include vendor/aoscp/configs/common_packages.mk
--include vendor/aoscp/configs/common_theme_packages.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)

@@ -2,7 +2,8 @@
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
-    LatinIME
+    LatinIME \
+	messaging
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -24,10 +25,6 @@ PRODUCT_PACKAGES += \
 
 # Aoscp OTA
 PRODUCT_PACKAGES += COTA
-
-# Providers
-#PRODUCT_PACKAGES += \
-    #OmniJaws
 
 # Google Packages
 PRODUCT_PACKAGES += Wallpapers

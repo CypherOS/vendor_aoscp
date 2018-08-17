@@ -10,7 +10,7 @@ Initializing the Repository
 
 Init core trees without any device/kernel/vendor :
 
-    $ repo init -u https://github.com/CypherOS/platform_manifest.git -b parfait-release
+    $ repo init -u https://github.com/CypherOS/platform_manifest.git -b poundcake-release
 
 Sync our repository :
 
@@ -49,7 +49,7 @@ Let's start with your thread name. If you are creating a thread for a device tha
 
     [ROM][OFFICIAL][ANDROID VERSION_TAG]CypherOS "Version"[DEVICE]
 	
-For example: [ROM][UNOFFICIAL][8.1.0_r18]CypherOS 6.0.0[Angler]
+For example: [ROM][UNOFFICIAL][9.0.0_r3]CypherOS 7.0.0[Angler]
 Simple right? Now, if you're creating a thread for a device that's not officially supported by CypherOS, [OFFICIAL] needs to be replaced with [UNOFFICIAL]
 to ensure users know what kind of build they're running. This is important, as it prevents alot of questions and concerns about bugs etc. that weren't generated
 by our team. 

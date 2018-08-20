@@ -1,3 +1,4 @@
+ifeq ($(TARGET_LUNA_PLATFORM_THEMES),true)
 # Theme vendor extension
 -include vendor/aoscp/themes/Android.mk
 
@@ -61,3 +62,4 @@ PRODUCT_PACKAGES += \
 
 # Set Pixel blue light theme on Gboard
 PRODUCT_SYSTEM_DEFAULT_PROPERTIESS += ro.com.google.ime.theme_id=5
+endif

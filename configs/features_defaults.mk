@@ -25,3 +25,8 @@
 # builds. Our themes utitlize the OMS platform natively embedded in
 # Android alongside the core framework of Color Manager
 TARGET_LUNA_PLATFORM_THEMES := false
+
+# This configuration allows including Luna platform themes in aoscp
+# builds. Our themes utitlize the OMS platform natively embedded in
+# Android alongside the core framework of Color Manager
+TARGET_LUNA_PLATFORM_SEPOLICY := false

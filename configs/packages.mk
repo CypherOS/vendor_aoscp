@@ -1,3 +1,9 @@
+ifeq ($(TARGET_LUNA_PLATFORM_SDK_APPS),true)
+PRODUCT_PACKAGES += \
+    Bolt \
+    MusicX
+endif
+
 # Required packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
@@ -18,10 +24,8 @@ PRODUCT_PACKAGES += \
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \
-    Bolt \
     GalleryX \
-    LunaQuickStep \
-    MusicX
+    LunaQuickStep
 
 # Aoscp OTA
 PRODUCT_PACKAGES += COTA

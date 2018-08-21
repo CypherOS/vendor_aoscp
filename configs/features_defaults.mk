@@ -30,3 +30,9 @@ TARGET_LUNA_PLATFORM_THEMES := false
 # builds. Our themes utitlize the OMS platform natively embedded in
 # Android alongside the core framework of Color Manager
 TARGET_LUNA_PLATFORM_SEPOLICY := false
+
+# This configuration allows including Luna platform apps in aoscp
+# builds, that depend heavily on the Android SDK. When the sdk is
+# updated, apps may require updates themselves to support the new
+# API's.
+TARGET_LUNA_PLATFORM_SDK_APPS := false

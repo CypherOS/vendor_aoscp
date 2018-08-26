@@ -124,6 +124,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 
 # Common overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)overlay/common
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)overlay/common
 
 # Version information used on all builds

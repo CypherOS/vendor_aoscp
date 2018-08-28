@@ -52,8 +52,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Default notification/alarm sounds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.ringtone=Triton.ogg \
-    ro.config.notification_sound=Orders_up.ogg \
+    ro.config.ringtone=Leaps_and_bounds.ogg \
+    ro.config.notification_sound=End_note.ogg \
     ro.config.alarm_alert=Bright_morning.ogg
 
 # Thank you, please drive thru!

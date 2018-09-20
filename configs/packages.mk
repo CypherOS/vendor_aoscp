@@ -36,6 +36,12 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     Wallpapers
 
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo \
+    turbo.xml \
+    privapp-permissions-turbo.xml
+
 # Extra tools
 PRODUCT_PACKAGES += \
     libsepol \

@@ -3,10 +3,6 @@ LOCAL_PATH := vendor/aoscp/
 
 include $(LOCAL_PATH)configs/version_defaults.mk
 include $(LOCAL_PATH)configs/features_defaults.mk
-include $(LOCAL_PATH)configs/bootanimation.mk
-include $(LOCAL_PATH)configs/fonts.mk
-include $(LOCAL_PATH)configs/packages.mk
-include $(LOCAL_PATH)configs/themes.mk
 
 # We build unofficial by default
 ifndef AOSCP_BUILDTYPE
@@ -137,5 +133,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)sounds/effects/GoodBattery.ogg:system/media/audio/ui/GoodBattery.ogg
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+include $(LOCAL_PATH)configs/bootanimation.mk
+include $(LOCAL_PATH)configs/fonts.mk
+include $(LOCAL_PATH)configs/packages.mk
+include $(LOCAL_PATH)configs/themes.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)

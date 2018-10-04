@@ -32,9 +32,15 @@ PRODUCT_PACKAGES += COTA
 
 # Google Packages
 PRODUCT_PACKAGES += \
+    MarkupGoogle \
     SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt \
     Wallpapers
+
+# Markup libs
+PRODUCT_COPY_FILES += \
+    vendor/aoscp/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/aoscp/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # Turbo
 PRODUCT_PACKAGES += \

@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += COTA
 # Google Packages
 PRODUCT_PACKAGES += \
     MarkupGoogle \
-    SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt \
     Wallpapers
 

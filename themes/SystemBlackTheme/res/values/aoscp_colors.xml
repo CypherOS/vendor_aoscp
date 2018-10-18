@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notifications -->
+    <color name="notification_legacy_background_color">@*android:color/black</color>
+    <color name="notification_material_background_dimmed_color">@*android:color/black</color>
+    <color name="notification_material_background_low_priority_color">@*android:color/black</color>
+    <color name="notification_divider_color">@*android:color/black</color>
+    <color name="notification_shade_background_color">@*android:color/black</color>
+    <color name="notification_ripple_untinted_color">#ffe0e0e0</color>
+    <color name="notification_ripple_color_low_priority">#fff9f9f9</color>
+    <color name="notification_ripple_tinted_color">#fffefefe</color>
+    <color name="notification_gear_color">#ffFFFFFF</color>
+    <color name="notification_guts_bg_color">@*android:color/black</color>
+
+    <color name="notification_material_background_color">@*android:color/black</color>
+    <color name="notification_default_color">@*android:color/black</color>
+    <color name="notification_action_list">@*android:color/black</color>
+    <color name="notification_action_list_dark">@*android:color/black</color>
+    <color name="notification_primary_text_color_light">#FFE8EAF6</color>
+    <color name="notification_secondary_text_color_light">#B3E8EAF6</color>
+    <color name="notification_progress_background_color">#B3E8EAF6</color>
+    <color name="notification_snooze_text">#FFE8EAF6</color>
+    <color name="notification_text_color1">#FFE8EAF6</color>
+    <color name="notification_default_color_dark">@*android:color/black</color>
+</resources>

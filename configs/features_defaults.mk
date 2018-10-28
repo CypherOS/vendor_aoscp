@@ -19,6 +19,8 @@
 #
 # Guarantees that the following are defined:
 #     TARGET_LUNA_PLATFORM_THEMES
+#     TARGET_LUNA_PLATFORM_SEPOLICY
+#     TARGET_LUNA_PLATFORM_SDK_APPS
 #
 
 # This configuration allows including Luna platform themes in aoscp
@@ -26,10 +28,9 @@
 # Android alongside the core framework of Color Manager
 TARGET_LUNA_PLATFORM_THEMES := true
 
-# This configuration allows including Luna platform themes in aoscp
-# builds. Our themes utitlize the OMS platform natively embedded in
-# Android alongside the core framework of Color Manager
-TARGET_LUNA_PLATFORM_SEPOLICY := false
+# This configuration allows including Luna platform sepolicy in aoscp
+# builds. Our sepolicy is a direct extension of aosp's platform sepolicy
+TARGET_LUNA_PLATFORM_SEPOLICY := true
 
 # This configuration allows including Luna platform apps in aoscp
 # builds, that depend heavily on the Android SDK. When the sdk is

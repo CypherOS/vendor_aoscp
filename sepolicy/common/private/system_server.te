@@ -1,1 +1,4 @@
 allow system_server storage_stub_file:dir getattr;
+
+# Allow system server to change fingerprint navigation properties
+allow system_server sys_fpnav_enabled_prop:property_service set; 

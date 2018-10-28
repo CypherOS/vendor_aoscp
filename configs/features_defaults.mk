@@ -36,4 +36,4 @@ TARGET_LUNA_PLATFORM_SEPOLICY := true
 # builds, that depend heavily on the Android SDK. When the sdk is
 # updated, apps may require updates themselves to support the new
 # API's.
-TARGET_LUNA_PLATFORM_SDK_APPS := false
+TARGET_LUNA_PLATFORM_SDK_APPS := true

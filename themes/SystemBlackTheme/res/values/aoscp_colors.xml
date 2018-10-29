@@ -22,4 +22,23 @@
     <color name="notification_snooze_text">#FFE8EAF6</color>
     <color name="notification_text_color1">#FFE8EAF6</color>
     <color name="notification_default_color_dark">@*android:color/black</color>
+
+    <!-- Immersive cling -->
+    <color name="immersive_cling_bg_color">@*android:color/black</color>
+    <color name="immersive_cling_text_color">@android:color/white</color>
+    <color name="immersive_cling_button_text_color">@android:color/white</color>
+
+    <!-- Resolver -->
+    <color name="chooser_service_row_background_color">@*android:color/black</color>
+
+    <!-- Autofill save dialog -->
+    <color name="autofill_save_title_color">@android:color/black</color>
+    <color name="autofill_autofill_save_custom_subtitle_color">@android:color/black</color>
+
+    <!-- Toast text and bg colors -->
+    <color name="toast_bg_color">@*android:color/black</color>
+    <color name="toast_text_color">@android:color/white</color>
+
+    <!-- Two target preference vertical divider color -->
+    <color name="list_divider_dark">@android:color/white</color>
 </resources>

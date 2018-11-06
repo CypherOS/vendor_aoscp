@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
 # Aoscp OTA
 PRODUCT_PACKAGES += COTA
 
+# Ambient Play
+PRODUCT_PACKAGES += \
+    AmbientPlayHistoryProvider
+
 # Google Packages
 PRODUCT_PACKAGES += \
     MarkupGoogle \

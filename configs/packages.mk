@@ -25,7 +25,13 @@ PRODUCT_PACKAGES += \
 # AOSCP Packages
 PRODUCT_PACKAGES += \
     GalleryX \
-    LunaQuickStep
+    LunaQuickStep \
+    WeatherProvider
+
+# WeatherProvider
+PRODUCT_COPY_FILES += \
+    vendor/aoscp/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
+    vendor/aoscp/prebuilt/common/etc/default-permissions/com.android.providers.weather.xml:system/etc/default-permissions/com.android.providers.weather.xml
 
 # Aoscp OTA
 PRODUCT_PACKAGES += COTA

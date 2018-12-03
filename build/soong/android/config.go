@@ -8,5 +8,6 @@ var AoscpConfig = struct {
 }{
 	// JavaSourceOverlayModuleWhitelist
 	[]string{
+	        "hardware.aoscp.controllers",
 	},
 }

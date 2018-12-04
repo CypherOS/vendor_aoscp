@@ -28,6 +28,13 @@ PRODUCT_PACKAGES += \
     LunaQuickStep \
     WeatherProvider
 
+# AOSCP Hardware
+PRODUCT_PACKAGES += \
+    hardware.aoscp.core \
+	hardware.aoscp.core.xml \
+    hardware.aoscp.controllers \
+    hardware.aoscp.controllers.xml
+
 # WeatherProvider
 PRODUCT_COPY_FILES += \
     vendor/aoscp/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \

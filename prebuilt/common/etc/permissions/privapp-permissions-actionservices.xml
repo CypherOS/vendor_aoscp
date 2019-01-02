@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.google.android.as">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.ACCESS_SHORTCUTS"/>
+        <permission name="android.permission.CALL_PHONE"/>
+        <permission name="android.permission.GET_ACCOUNTS"/>
+        <permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_CALENDAR"/>
+        <permission name="android.permission.READ_CALL_LOG"/>
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.READ_SMS"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.UNLIMITED_SHORTCUTS_API_CALLS"/>
+        <permission name="com.android.alarm.permission.SET_ALARM"/>
+        <permission name="com.google.android.apps.miphone.aiai.matchmaker.BIND_SERVICE"/>
+        <permission name="com.google.android.as.allapps.SUGGESTION_CONSUMER"/>
+        <permission name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+        <permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+        <permission name="com.google.android.providers.gsf.permission.WRITE_GSERVICES"/>
+    </privapp-permissions>
+</permissions>

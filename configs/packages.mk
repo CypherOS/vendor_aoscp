@@ -64,6 +64,11 @@ PRODUCT_PACKAGES += \
     turbo.xml \
     privapp-permissions-turbo.xml
 
+# ActionServices
+PRODUCT_PACKAGES += \
+    MatchmakerPrebuilt \
+    privapp-permissions-actionservices.xml.xml
+
 # Extra tools
 PRODUCT_PACKAGES += \
     libsepol \

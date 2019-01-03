@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
 # ActionServices
 PRODUCT_PACKAGES += \
     MatchmakerPrebuilt \
-    privapp-permissions-actionservices.xml.xml
+    privapp-permissions-actionservices.xml
 
 # Extra tools
 PRODUCT_PACKAGES += \

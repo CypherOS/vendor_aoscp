@@ -4,6 +4,14 @@ LOCAL_PATH := vendor/aoscp/
 include $(LOCAL_PATH)configs/version_defaults.mk
 include $(LOCAL_PATH)configs/features_defaults.mk
 
+# Do not include art debug targets
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+# Strip the local variable table and the local variable type table to reduce
+# the size of the system image. This has no bearing on stack traces, but will
+# leave less information available via JDWP.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
 # We build unofficial by default
 ifndef AOSCP_BUILDTYPE
     AOSCP_BUILDTYPE := unofficial

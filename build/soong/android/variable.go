@@ -6,6 +6,9 @@ type Product_variables struct {
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
+	Should_skip_waiting_for_qsee struct {
+		Cflags []string
+	}
 	Supports_hw_fde struct {
 		Cflags []string
 		Header_libs []string
@@ -40,6 +43,7 @@ type ProductVariables struct {
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Java_Source_Overlays *string `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
+	Should_skip_waiting_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`

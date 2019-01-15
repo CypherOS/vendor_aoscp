@@ -21,7 +21,8 @@
     <color name="notification_progress_background_color">#B3E8EAF6</color>
     <color name="notification_snooze_text">#FFE8EAF6</color>
     <color name="notification_text_color1">#FFE8EAF6</color>
-    <color name="notification_default_color_dark">@*android:color/primary_device_default_dark</color>
+    <color name="notification_default_color_dark">#ffe5e5e5</color>
+    <color name="notification_default_color_light">#ffe5e5e5</color>
 
     <!-- Immersive cling -->
     <color name="immersive_cling_bg_color">@*android:color/background_material_dark</color>

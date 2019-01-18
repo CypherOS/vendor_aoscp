@@ -1,2 +1,1 @@
-# treat fuseblk as sdcard_external
-genfscon fuseblk / u:object_r:fuse_device:s0
+genfscon fuseblk / u:object_r:vfat:s0

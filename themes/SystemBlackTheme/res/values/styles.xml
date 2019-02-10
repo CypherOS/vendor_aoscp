@@ -21,6 +21,8 @@
         <item name="android:navigationBarColor">@*android:color/black</item>
         <item name="android:textColorPrimaryInverse">@*android:color/black</item>
         <item name="android:textAppearanceButton">@*android:style/TextAppearance.DeviceDefault.Widget.Button</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
     </style>
     <style name="Theme.DeviceDefault.SearchBar" parent="@*android:style/Theme.Material.SearchBar">
         <item name="android:colorPrimary">@*android:color/black</item>

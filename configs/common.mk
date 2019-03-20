@@ -106,6 +106,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
+# AcrCloud Engine Plugin
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)prebuilt/common/lib64/libACRCloudEngine.so:system/lib64/libACRCloudEngine.so
+
 # ExFAT support
 PRODUCT_PACKAGES += \
     fsck.exfat \

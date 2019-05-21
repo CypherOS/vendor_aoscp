@@ -55,7 +55,7 @@ ifndef PLATFORM_LUNA_BUILD_NUMBER
   # $(shell date -u +%m): Auto generated current month
   # 646: Last 3 numbers are a reversed time code. Time codes are track from the current time
   #      the (PLATFORM_LUNA_MAINTENANCE_PATCH) get's updated and so on.
-  PLATFORM_LUNA_BUILD_NUMBER := LPBN.P8102.$(shell date -u +%d).$(shell date -u +%m)646
+  PLATFORM_LUNA_BUILD_NUMBER := LPBN.P9102.$(shell date -u +%d).$(shell date -u +%m)001
 endif
 
 ifndef PLATFORM_LUNA_MAINTENANCE_PATCH
@@ -64,5 +64,5 @@ ifndef PLATFORM_LUNA_MAINTENANCE_PATCH
   # of maintenance has been applied across devices and builds. This uses
   # the same logic as Android's security patch level, except it is updated
   # simultaneously and not on a monthly iteration.
-  PLATFORM_LUNA_MAINTENANCE_PATCH := 2018-08-15
+  PLATFORM_LUNA_MAINTENANCE_PATCH := 2019-05-21
 endif

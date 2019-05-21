@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     CellBroadcastReceiver \
     LatinIME \
+    LiveWallpapersPicker \
     messaging
 
 # Optional packages

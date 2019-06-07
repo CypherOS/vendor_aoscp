@@ -14,14 +14,8 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    libemoji \
     Terminal \
     PhotoTable
-
-# Include explicitly to work around GMS issues
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    librsjni
 
 # AOSCP Packages
 PRODUCT_PACKAGES += \

@@ -17,16 +17,6 @@ ifndef AOSCP_BUILDTYPE
     AOSCP_BUILDTYPE := unofficial
 endif
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.modversion=$(AOSCP_VERSION)-$(shell date -u +%Y%m%d) \
-    ro.aoscp.version=$(AOSCP_VERSION) \
-    ro.aoscp.version_code=$(PLATFORM_LUNA_VERSION_CODE) \
-    ro.aoscp.device=$(AOSCP_BUILD) \
-    ro.aoscp.display.version=$(AOSCP_VERSION) \
-    ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
-    ro.aoscp.build=$(PLATFORM_LUNA_BUILD_NUMBER) \
-    ro.aoscp.maintenance_patch=$(PLATFORM_LUNA_MAINTENANCE_PATCH)
-
 export AOSCP_TARGET_ZIP := aoscp_$(AOSCP_BUILD)-$(AOSCP_VERSION)-$(shell date -u +%Y%m%d)-$(AOSCP_BUILDTYPE).zip
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)

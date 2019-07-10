@@ -66,3 +66,13 @@ ifndef PLATFORM_LUNA_MAINTENANCE_PATCH
   # simultaneously and not on a monthly iteration.
   PLATFORM_LUNA_MAINTENANCE_PATCH := 2019-05-21
 endif
+
+ADDITIONAL_BUILD_PROPERTIES  += \
+    ro.modversion=$(AOSCP_VERSION)-$(shell date -u +%Y%m%d) \
+    ro.aoscp.version=$(AOSCP_VERSION) \
+    ro.aoscp.version_code=$(PLATFORM_LUNA_VERSION_CODE) \
+    ro.aoscp.device=$(AOSCP_BUILD) \
+    ro.aoscp.display.version=$(AOSCP_VERSION) \
+    ro.aoscp.releasetype=$(AOSCP_BUILDTYPE) \
+    ro.aoscp.build=$(PLATFORM_LUNA_BUILD_NUMBER) \
+    ro.aoscp.maintenance_patch=$(PLATFORM_LUNA_MAINTENANCE_PATCH)

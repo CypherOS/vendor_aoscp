@@ -85,10 +85,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
-# Signature compatibility validation
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
-
 # init.d support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \

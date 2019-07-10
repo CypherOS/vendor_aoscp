@@ -74,6 +74,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)prebuilt/common/bin/blacklist:system/addon.d/blacklist \
     $(LOCAL_PATH)prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh
 
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    $(LOCAL_PATH)prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    $(LOCAL_PATH)prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+endif
+
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)configs/permissions/backup.xml:system/etc/sysconfig/backup.xml

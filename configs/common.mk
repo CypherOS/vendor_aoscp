@@ -1,7 +1,6 @@
 PRODUCT_BRAND ?= aoscp
 LOCAL_PATH := vendor/aoscp/
 
-include $(LOCAL_PATH)configs/version_defaults.mk
 include $(LOCAL_PATH)configs/features_defaults.mk
 
 # Do not include art debug targets
